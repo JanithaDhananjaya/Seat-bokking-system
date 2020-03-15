@@ -67,25 +67,6 @@ public class addCustomer {
         }
     }
 
-    public static void saveData(String[] data) {
-        File fIle = new File("C:\\Users\\Tharuka\\Desktop\\data.txt");
-        FileWriter fileWriter = null;
-        try {
-            fileWriter = new FileWriter(fIle);
-            for (int i = 0; i < data.length; i++) {
-                fileWriter.write(data[i] + "-" + "Available" + "\n");
-                //   fileWriter.write(String.valueOf(data));
-            }
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        } finally {
-            try {
-                fileWriter.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
 
     public void reserveData() {
 
@@ -117,7 +98,6 @@ public class addCustomer {
         for (int i = 0; i < data.length; i++) {
             data[i] = "Seat " + (i + 1);
         }
-        saveData(data);
         reservedSeats = new ArrayList<>();
         labels = new ArrayList<>();
 
