@@ -8,6 +8,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.FlowPane;
+import javafx.scene.paint.Color;
 import model.CustomerBooking;
 
 import java.io.FileNotFoundException;
@@ -19,7 +20,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class view {
+public class ViewAllSeats {
     private List<CustomerBooking> customerBookings = new ArrayList<>();
     @FXML
     private FlowPane container;
@@ -32,7 +33,7 @@ public class view {
 
     private List<String> reservedSeats = new ArrayList<>();
 
-    public view() {
+    public ViewAllSeats() {
         readBookingDetailsFile();
     }
 
@@ -60,7 +61,6 @@ public class view {
 
     public void emptySeats() {
         reservedSeats.clear();
-        ;
     }
 
 
@@ -89,6 +89,7 @@ public class view {
             button.setId(Integer.toString(i));
             if (reservedSeats.contains(String.valueOf(i))) {
                 button.setStyle("-fx-background-color: red;");
+                button.setTextFill(Color.WHITE);
             }
             container.getChildren().add(button);
         }

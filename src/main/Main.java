@@ -1,7 +1,5 @@
 package main;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,11 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import model.CustomerBooking;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.Reader;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -80,7 +74,7 @@ public class Main extends Application {
             e.printStackTrace();
         }
         stage.setTitle("Book Seats");
-        stage.setScene(new Scene(root, 600, 600));
+        stage.setScene(new Scene(root, 900, 600));
         stage.show();
     }
 
@@ -88,7 +82,7 @@ public class Main extends Application {
         Stage stage = new Stage();
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("../view/view.fxml"));
+            root = FXMLLoader.load(getClass().getResource("../view/viewAllSeats.fxml"));
         } catch (IOException e) {
             e.printStackTrace();
         }

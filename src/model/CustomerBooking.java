@@ -1,10 +1,9 @@
 package model;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public class CustomerBooking {
-    private String customerId;
+    private String customerName;
     private String bookingDate;
     private String route;
     private List<String> seats;
@@ -12,19 +11,19 @@ public class CustomerBooking {
     public CustomerBooking() {
     }
 
-    public CustomerBooking(String customerId, String bookingDate, String route, List<String> seats) {
-        this.customerId = customerId;
+    public CustomerBooking(String customerName, String bookingDate, String route, List<String> seats) {
+        this.customerName = customerName;
         this.bookingDate = bookingDate;
         this.route = route;
         this.seats = seats;
     }
 
-    public String getCustomerId() {
-        return customerId;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
+    public void setCustomerId(String customerName) {
+        this.customerName = customerName;
     }
 
     public String getBookingDate() {
@@ -54,7 +53,7 @@ public class CustomerBooking {
     @Override
     public String toString() {
         return "CustomerBooking{" +
-                "customerId='" + customerId + '\'' +
+                "customerName='" + customerName + '\'' +
                 ", bookingDate=" + bookingDate +
                 ", route='" + route + '\'' +
                 ", seats=" + seats +

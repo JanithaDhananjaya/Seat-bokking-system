@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.view">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ViewAllSeats">
    <children>
       <DatePicker fx:id="datePicker" layoutX="288.0" layoutY="28.0" />
       <FlowPane fx:id="container" layoutY="225.0" prefHeight="174.0" prefWidth="600.0" />
@@ -23,7 +23,7 @@
             <Font size="19.0" />
          </font>
       </Label>
-      <RadioButton layoutX="288.0" layoutY="81.0" mnemonicParsing="false" text="Colombo to Badulla">
+      <RadioButton layoutX="288.0" layoutY="81.0" mnemonicParsing="false" selected="true" text="Colombo to Badulla">
          <font>
             <Font size="19.0" />
          </font>

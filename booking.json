@@ -1,6 +1,6 @@
 [
   {
-    "customerId": "Janitha",
+    "customerName": "Janitha",
     "bookingDate": "2020-03-15",
     "route": "Colombo to Badulla",
     "seats": [
@@ -10,7 +10,7 @@
     ]
   },
   {
-    "customerId": "Dhananjaya",
+    "customerName": "Dhananjaya",
     "bookingDate": "2020-03-15",
     "route": "Colombo to Badulla",
     "seats": [
@@ -20,7 +20,7 @@
     ]
   },
   {
-    "customerId": "Tharuka",
+    "customerName": "Tharuka",
     "bookingDate": "2020-03-17",
     "route": "Badulla to Colombo",
     "seats": [
@@ -30,7 +30,7 @@
     ]
   },
   {
-    "customerId": "Dulaj",
+    "customerName": "Dulaj",
     "bookingDate": "2020-03-17",
     "route": "Badulla to Colombo",
     "seats": [
@@ -40,12 +40,32 @@
     ]
   },
   {
-    "customerId": "Perera",
+    "customerName": "Perera",
     "bookingDate": "2020-03-17",
     "route": "Colombo to Badulla",
     "seats": [
       "14",
       "15"
+    ]
+  },
+  {
+    "customerName": "Namal",
+    "bookingDate": "2020-03-31",
+    "route": "Colombo to Badulla",
+    "seats": [
+      "10",
+      "11",
+      "12"
+    ]
+  },
+  {
+    "customerName": "Oshan",
+    "bookingDate": "2020-03-24",
+    "route": "Colombo to Badulla",
+    "seats": [
+      "33",
+      "34",
+      "35"
     ]
   }
 ]

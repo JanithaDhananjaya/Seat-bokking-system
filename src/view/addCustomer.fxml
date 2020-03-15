@@ -10,34 +10,34 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.addCustomer">
+<AnchorPane prefHeight="633.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AddCustomer">
    <children>
-      <Button layoutX="267.0" layoutY="333.0" mnemonicParsing="false" onAction="#view" text="view">
+      <Button layoutX="47.0" layoutY="298.0" mnemonicParsing="false" onAction="#view" text="View">
          <font>
-            <Font size="27.0" />
+            <Font size="19.0" />
          </font></Button>
-      <Button layoutX="400.0" layoutY="333.0" mnemonicParsing="false" onAction="#reserveData" text="reserve">
+      <Button fx:id="btnReserve" layoutX="152.0" layoutY="298.0" mnemonicParsing="false" onAction="#reserveData" text="Reserve" visible="false">
          <font>
-            <Font size="27.0" />
+            <Font size="19.0" />
          </font></Button>
-      <TextField fx:id="txtName" layoutX="220.0" layoutY="98.0" prefHeight="27.0" prefWidth="188.0" />
-      <Label fx:id="lblName" layoutX="121.0" layoutY="103.0" text="Name">
+      <TextField fx:id="txtName" layoutX="162.0" layoutY="98.0" prefHeight="27.0" prefWidth="188.0" />
+      <Label fx:id="lblName" layoutX="63.0" layoutY="98.0" text="Name">
          <font>
             <Font size="20.0" />
          </font></Label>
-      <FlowPane fx:id="container" layoutX="54.0" layoutY="196.0" prefHeight="200.0" prefWidth="200.0" />
-      <DatePicker fx:id="datePicker" layoutX="220.0" layoutY="59.0" onAction="#getBookingDate" />
-      <Label layoutX="123.0" layoutY="64.0" text="Date">
+      <FlowPane fx:id="container" layoutX="415.0" layoutY="17.0" prefHeight="586.0" prefWidth="347.0" />
+      <DatePicker fx:id="datePicker" layoutX="160.0" layoutY="35.0" />
+      <Label layoutX="63.0" layoutY="40.0" text="Date">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="121.0" layoutY="153.0" prefHeight="17.0" prefWidth="146.0" text="Select Route">
+      <Label layoutX="54.0" layoutY="146.0" prefHeight="17.0" prefWidth="146.0" text="Select Route">
          <font>
             <Font size="21.0" />
          </font>
       </Label>
-      <RadioButton fx:id="ctb" layoutX="205.0" layoutY="198.0" mnemonicParsing="false" text="Colombo to Badulla">
+      <RadioButton fx:id="ctb" layoutX="138.0" layoutY="191.0" mnemonicParsing="false" text="Colombo to Badulla">
          <font>
             <Font size="23.0" />
          </font>
@@ -45,7 +45,7 @@
             <ToggleGroup fx:id="route" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="btc" layoutX="205.0" layoutY="235.0" mnemonicParsing="false" text="Badulla to Colombo" toggleGroup="$route">
+      <RadioButton fx:id="btc" layoutX="138.0" layoutY="228.0" mnemonicParsing="false" text="Badulla to Colombo" toggleGroup="$route">
          <font>
             <Font size="23.0" />
          </font>

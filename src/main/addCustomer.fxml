@@ -8,47 +8,62 @@
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.addCustomer">
+<AnchorPane prefHeight="705.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.addCustomer">
    <children>
-      <Button layoutX="267.0" layoutY="333.0" mnemonicParsing="false" onAction="#view" text="view">
-         <font>
-            <Font size="27.0" />
-         </font></Button>
-      <Button layoutX="400.0" layoutY="333.0" mnemonicParsing="false" onAction="#reserveData" text="reserve">
-         <font>
-            <Font size="27.0" />
-         </font></Button>
-      <TextField fx:id="txtName" layoutX="220.0" layoutY="98.0" prefHeight="27.0" prefWidth="188.0" />
-      <Label fx:id="lblName" layoutX="121.0" layoutY="103.0" text="Name">
-         <font>
-            <Font size="20.0" />
-         </font></Label>
-      <FlowPane fx:id="container" layoutX="-3.0" layoutY="3.0" prefHeight="393.0" prefWidth="600.0" />
-      <DatePicker fx:id="datePicker" layoutX="220.0" layoutY="59.0" onAction="#getBookingDate" />
-      <Label layoutX="123.0" layoutY="64.0" text="Date">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="121.0" layoutY="153.0" prefHeight="17.0" prefWidth="146.0" text="Select Route">
-         <font>
-            <Font size="21.0" />
-         </font>
-      </Label>
-      <RadioButton fx:id="ctb" layoutX="205.0" layoutY="198.0" mnemonicParsing="false" text="Colombo to Badulla">
-         <font>
-            <Font size="23.0" />
-         </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="route" />
-         </toggleGroup>
-      </RadioButton>
-      <RadioButton fx:id="btc" layoutX="205.0" layoutY="235.0" mnemonicParsing="false" text="Badulla to Colombo" toggleGroup="$route">
-         <font>
-            <Font size="23.0" />
-         </font>
-      </RadioButton>
+      <Pane fx:id="mainPane" prefHeight="705.0" prefWidth="774.0">
+         <children>
+            <Button layoutX="310.0" layoutY="312.0" mnemonicParsing="false" onAction="#view" text="view">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReserve" layoutX="469.0" layoutY="312.0" mnemonicParsing="false" onAction="#reserveData" text="reserve" visible="false">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <TextField fx:id="txtName" layoutX="293.0" layoutY="118.0" prefHeight="27.0" prefWidth="188.0" />
+            <Label fx:id="lblName" layoutX="163.0" layoutY="137.0" text="Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="datePicker" layoutX="293.0" layoutY="63.0" onAction="#getBookingDate" />
+            <Label layoutX="169.0" layoutY="64.0" text="Date">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="99.0" layoutY="203.0" prefHeight="17.0" prefWidth="146.0" text="Select Route">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="ctb" layoutX="283.0" layoutY="199.0" mnemonicParsing="false" selected="true" text="Colombo to Badulla">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="route" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="btc" layoutX="283.0" layoutY="248.0" mnemonicParsing="false" text="Badulla to Colombo">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="route" />
+               </toggleGroup>
+            </RadioButton>
+         </children>
+      </Pane>
+      <Pane fx:id="btnPane" layoutX="5.0" layoutY="3.0" prefHeight="698.0" prefWidth="768.0" visible="false">
+         <children>
+            <FlowPane fx:id="container" layoutX="48.0" layoutY="396.0" prefHeight="288.0" prefWidth="623.0" />
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
